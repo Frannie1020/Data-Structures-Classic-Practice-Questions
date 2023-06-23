@@ -1,4 +1,4 @@
-//Ëæ»úÖÃ»»Êı×îÖÕÌá½»´úÂë
+//éšæœºç½®æ¢æ•°æœ€ç»ˆæäº¤ä»£ç 
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -24,9 +24,9 @@ void RandomPermutation1(int n)
 	int* a = NULL;
 	a = (int*)malloc(n*sizeof(int)); 
 	int i,k=0,randnum;
-	int t;                    //±£´æÉú³ÉµÄËæ»úÊı 
-	int chongfu;              //ÅĞ¶ÏÊÇ·ñÖØ¸´ 
-	a[0] = RandInt(1,n+0.1);      //Éú³ÉÊı×éµÄµÚÒ»¸öÊı 
+	int t;                    //ä¿å­˜ç”Ÿæˆçš„éšæœºæ•° 
+	int chongfu;              //åˆ¤æ–­æ˜¯å¦é‡å¤ 
+	a[0] = RandInt(1,n+0.1);      //ç”Ÿæˆæ•°ç»„çš„ç¬¬ä¸€ä¸ªæ•° 
 	
 	 while(1)
     {
@@ -78,14 +78,14 @@ void RandomPermutation2(int n)
 		Used[i] = 0;
 	}
 	
-	int t;                    //±£´æÉú³ÉµÄËæ»úÊı 
-	int chongfu;              //ÅĞ¶ÏÊÇ·ñÖØ¸´ 
+	int t;                    //ä¿å­˜ç”Ÿæˆçš„éšæœºæ•° 
+	int chongfu;              //åˆ¤æ–­æ˜¯å¦é‡å¤ 
 	
 	i=0;
 	while(i!=n)
 	{
 		t = RandInt(1,n);
-		//ÅĞ¶ÏÊÇ·ñÓĞÖØ¸´ 
+		//åˆ¤æ–­æ˜¯å¦æœ‰é‡å¤ 
 		if(Used[t] != 1)
 		{
 			a[i] = t;
@@ -114,12 +114,12 @@ void RandomPermutation3(int n)
 	a = (int*)malloc(n*sizeof(int));
 	int i=0;
 	
-	for (i=0; i<n; i++)       //Éú³É 1,2,3,4,5,   ,n 
+	for (i=0; i<n; i++)       //ç”Ÿæˆ 1,2,3,4,5,   ,n 
 	{
 		a[i] = i+1; 
 	}
 	
-	int temp,t;				 //±éÀúË³Ğò±í£¬Ã¿¸öÔªËØËæ»ú½»»» 
+	int temp,t;				 //éå†é¡ºåºè¡¨ï¼Œæ¯ä¸ªå…ƒç´ éšæœºäº¤æ¢ 
 	for (i=1; i<n; i++)
 	{
 		temp = a[i];
